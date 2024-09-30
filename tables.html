@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Interactivas</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><li>Elementos Genericos</li></a>
+            <a href="grial2.html"><li>Elementos Semanticos</li></a>
+            <a href="text.html"><li>Elementos de Texto</li></a>
+            <a href="tables.html"><li>Tablas compuestas</li></a>
+            <a href="Imagenes"><li>Imagenes</li></a>
+        </ul>
+    </nav>
+    
+    <h2>Tabla con colores</h2>
+    <table>
+        <tr>
+            <th rowspan="2" style="background-color: beige;">A</th>
+            <th colspan="2" style="background-color: aquamarine;">B</th>
+        </tr>
+        <tr>
+            <th style="background-color: cadetblue;">C</th>
+            <th style="background-color: coral;">D</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+            </tr>
+            <tr>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <hr>
+
+    <h2>Otra tabla con diseño avanzado</h2>
+    <table>
+        <tr>
+            <td colspan="3" style="background-color: antiquewhite;">A</td>
+            <td rowspan="2" style="background-color: aqua;">B</td>
+            <td style="background-color: yellow;">C</td>
+            <td style="background-color: green;">D</td>
+        </tr>
+        <tr>
+            <td style="background-color: blueviolet;">E</td>
+            <td style="background-color: grey;">F</td>
+            <td style="background-color: rebeccapurple;">G</td>
+            <td colspan="2" style="background-color: red;">H</td>
+        </tr>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td colspan="2" style="background-color: chartreuse;" onclick="showAlert('5')">5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td colspan="2" style="background-color: brown;" onclick="showAlert('10')">10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
